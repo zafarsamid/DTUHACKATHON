@@ -66,7 +66,7 @@ export default function LoginPage() {
       setIsLoading(false);
       toast({
         title: "Login Successful",
-        description: `Welcome to HealthSync ${role} dashboard!`,
+        description: `Welcome to VAIDIKA ${role} dashboard!`,
       });
       navigate(`/${role}`);
     }, 1000);
@@ -106,7 +106,7 @@ export default function LoginPage() {
         <div className="relative z-20 mt-auto">
           <blockquote className="space-y-2">
             <p className="text-lg">
-              "HealthSync has streamlined our hospital operations and improved patient care coordination significantly."
+              "VAIDIKA has streamlined our hospital operations and improved patient care coordination significantly."
             </p>
             <footer className="text-sm">Dr. Sharma, Apollo Hospitals</footer>
           </blockquote>
@@ -119,7 +119,7 @@ export default function LoginPage() {
               <Heart className="h-8 w-8 fill-health-primary stroke-white dark:stroke-black" />
             </div>
             <h1 className="text-2xl font-semibold tracking-tight">
-              Welcome to HealthSync
+              Welcome to VAIDIKA
             </h1>
             <p className="text-sm text-muted-foreground">
               Enter your credentials to access your account
@@ -155,7 +155,7 @@ export default function LoginPage() {
                   <CardHeader>
                     <CardTitle>Login</CardTitle>
                     <CardDescription>
-                      Login to your HealthSync account
+                      Login to your VAIDIKA account
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-4">
@@ -220,7 +220,7 @@ export default function LoginPage() {
                   <CardHeader>
                     <CardTitle>Create an account</CardTitle>
                     <CardDescription>
-                      Register a new HealthSync account
+                      Register a new VAIDIKA account
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-4">
