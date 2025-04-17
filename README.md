@@ -41,9 +41,20 @@ Vaidika is an intelligent healthcare web application built for the Vihaan 8.0 Ha
 
 ## Screenshots
 
-| Dashboard | Booking | Medical Records | AI Prediction |
-|----------|---------|------------------|----------------|
-| ![ss1]() | ![ss2]() | ![ss3]()         | ![ss4]()       |
+# Login
+![Screenshot 2025-04-17 160734](https://github.com/user-attachments/assets/a32b04cb-13b2-4df4-83fd-14aff305bb38)
+
+# Dashboard
+![Screenshot 2025-04-17 161745](https://github.com/user-attachments/assets/fe9b4f3e-93ff-4627-8746-8dcae5730c10)
+
+# Medical Records
+![Screenshot 2025-04-17 161926](https://github.com/user-attachments/assets/dd425ec4-acb3-42db-a24e-117ad415b3d2)
+
+# Appointments
+![Screenshot 2025-04-17 161959](https://github.com/user-attachments/assets/fddb2065-39a0-41c2-8f4f-6b947aaca428)
+
+# AI Disease Prediction 
+![Screenshot 2025-04-17 162225](https://github.com/user-attachments/assets/8c91bc01-25a6-4ce9-94e5-76bd83cf79ee)
 
 ---
 

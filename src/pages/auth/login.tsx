@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Heart, Mail, Lock, ArrowRight, User, Briefcase } from "lucide-react";
@@ -10,12 +9,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useToast } from "@/hooks/use-toast";
 import { Checkbox } from "@/components/ui/checkbox";
 
-
+// Temporary account credentials
 const tempAccounts = {
-  patient: { email: "patient@VAIDIKA.com", password: "patient123" },
-  doctor: { email: "doctor@VAIDIKA.com", password: "doctor123" },
-  pharmacy: { email: "pharmacy@VAIDIKA.com", password: "pharmacy123" },
-  admin: { email: "admin@VAIDIKA.com", password: "admin123" },
+  patient: { email: "patient@healthsync.com", password: "patient123" },
+  doctor: { email: "doctor@healthsync.com", password: "doctor123" },
+  pharmacy: { email: "pharmacy@healthsync.com", password: "pharmacy123" },
+  admin: { email: "admin@healthsync.com", password: "admin123" },
 };
 
 export default function LoginPage() {
@@ -36,7 +35,7 @@ export default function LoginPage() {
     e.preventDefault();
     setIsLoading(true);
     
-    
+    // Simple login validation for demo
     if (loginEmail === tempAccounts.patient.email && loginPassword === tempAccounts.patient.password) {
       handleSuccessfulLogin("patient");
     } else if (loginEmail === tempAccounts.doctor.email && loginPassword === tempAccounts.doctor.password) {
@@ -58,17 +57,17 @@ export default function LoginPage() {
   };
 
   const handleSuccessfulLogin = (role: string) => {
-    
-    localStorage.setItem("VAIDIKA_user_role", role);
-    localStorage.setItem("VAIDIKA_auth", "true");
+    // Store user role in localStorage for persistence
+    localStorage.setItem("healthsync_user_role", role);
+    localStorage.setItem("healthsync_auth", "true");
     
     setTimeout(() => {
       setIsLoading(false);
       toast({
         title: "Login Successful",
-        description: `Welcome to VAIDIKA ${role} dashboard!`,
+        description: Welcome to HealthSync ${role} dashboard!,
       });
-      navigate(`/${role}`);
+      navigate(/${role});
     }, 1000);
   };
 
@@ -78,16 +77,16 @@ export default function LoginPage() {
     
     setTimeout(() => {
       setIsLoading(false);
-      
-      localStorage.setItem("VAIDIKA_user_role", userType);
-      localStorage.setItem("VAIDIKA_auth", "true");
+      // Store registration info (in a real app this would go to a database)
+      localStorage.setItem("healthsync_user_role", userType);
+      localStorage.setItem("healthsync_auth", "true");
       
       toast({
         title: "Registration Successful",
         description: "Your account has been created successfully!",
       });
       
-      navigate(`/${userType}`);
+      navigate(/${userType});
     }, 1500);
   };
 
@@ -101,14 +100,14 @@ export default function LoginPage() {
         <div className="absolute inset-0 bg-health-primary" />
         <div className="relative z-20 flex items-center text-lg font-medium">
           <Heart className="mr-2 h-6 w-6 fill-white" />
-          VAIDIKA
+          HealthSync
         </div>
         <div className="relative z-20 mt-auto">
           <blockquote className="space-y-2">
             <p className="text-lg">
-              "VAIDIKA hass streamlined our hospital operations and improved patient care coordination significantly."
+              "HealthSync has streamlined our hospital operations and improved patient care coordination significantly."
             </p>
-            <footer className="text-sm">Team Ternary Operators</footer>
+            <footer className="text-sm">Dr. Sharma, Apollo Hospitals</footer>
           </blockquote>
         </div>
       </div>
@@ -116,10 +115,10 @@ export default function LoginPage() {
         <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
           <div className="flex flex-col space-y-2 text-center">
             <div className="flex justify-center mb-4">
-              
+              <Heart className="h-8 w-8 fill-health-primary stroke-white dark:stroke-black" />
             </div>
             <h1 className="text-2xl font-semibold tracking-tight">
-              Welcome to VAIDIKA
+              Welcome to HealthSync
             </h1>
             <p className="text-sm text-muted-foreground">
               Enter your credentials to access your account
@@ -137,9 +136,9 @@ export default function LoginPage() {
               <div className="mt-2 p-3 bg-muted rounded-md text-left text-xs">
                 <h4 className="font-semibold mb-1">Test Accounts:</h4>
                 <div className="grid gap-1">
-                  <p>🧑‍⚕️ <strong>Patient:</strong> patient@VAIDIKA.com / patient123</p>
-                  <p>👨‍⚕️ <strong>Doctor:</strong> doctor@VAIDIKA.com / doctor123</p>
-                  <p>💊 <strong>Pharmacy:</strong> pharmacy@VAIDIKA.com / pharmacy123</p>
+                  <p>🧑‍⚕ <strong>Patient:</strong> patient@healthsync.com / patient123</p>
+                  <p>👨‍⚕ <strong>Doctor:</strong> doctor@healthsync.com / doctor123</p>
+                  <p>💊 <strong>Pharmacy:</strong> pharmacy@healthsync.com / pharmacy123</p>
                 </div>
               </div>
             )}
@@ -155,7 +154,7 @@ export default function LoginPage() {
                   <CardHeader>
                     <CardTitle>Login</CardTitle>
                     <CardDescription>
-                      Login to your VAIDIKA account
+                      Login to your HealthSync account
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-4">
@@ -220,7 +219,7 @@ export default function LoginPage() {
                   <CardHeader>
                     <CardTitle>Create an account</CardTitle>
                     <CardDescription>
-                      Register a new VAIDIKA account
+                      Register a new HealthSync account
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-4">
