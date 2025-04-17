@@ -104,12 +104,12 @@ export default function LoginPage() {
         <div className="absolute inset-0 bg-health-primary" />
         <div className="relative z-20 flex items-center text-lg font-medium">
           <Heart className="mr-2 h-6 w-6 fill-white" />
-          HealthSync
+          Vaidika
         </div>
         <div className="relative z-20 mt-auto">
           <blockquote className="space-y-2">
             <p className="text-lg">
-              "HealthSync has streamlined our hospital operations and improved patient care coordination significantly."
+              "Vaidika has streamlined our hospital operations and improved patient care coordination significantly."
             </p>
             <footer className="text-sm">Dr. Sharma, Apollo Hospitals</footer>
           </blockquote>
@@ -122,7 +122,7 @@ export default function LoginPage() {
               <Heart className="h-8 w-8 fill-health-primary stroke-white dark:stroke-black" />
             </div>
             <h1 className="text-2xl font-semibold tracking-tight">
-              Welcome to HealthSync
+              Welcome to Vaidika
             </h1>
             <p className="text-sm text-muted-foreground">
               Enter your credentials to access your account
@@ -158,7 +158,7 @@ export default function LoginPage() {
                   <CardHeader>
                     <CardTitle>Login</CardTitle>
                     <CardDescription>
-                      Login to your HealthSync account
+                      Login to your Vaidika account
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-4">
@@ -223,7 +223,7 @@ export default function LoginPage() {
                   <CardHeader>
                     <CardTitle>Create an account</CardTitle>
                     <CardDescription>
-                      Register a new HealthSync account
+                      Register a new Vaidika account
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-4">
