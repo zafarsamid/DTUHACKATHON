@@ -106,7 +106,7 @@ export default function LoginPage() {
         <div className="relative z-20 mt-auto">
           <blockquote className="space-y-2">
             <p className="text-lg">
-              "VAIDIKA has streamlined our hospital operations and improved patient care coordination significantly."
+              "VAIDIKA hass streamlined our hospital operations and improved patient care coordination significantly."
             </p>
             <footer className="text-sm">Team Ternary Operators</footer>
           </blockquote>
