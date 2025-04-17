@@ -1,0 +1,135 @@
+
+import { MedicalRecord } from './index';
+
+export const mockMedicalRecords: MedicalRecord[] = [
+  {
+    id: 1,
+    title: 'Annual Health Checkup Report',
+    description: 'Complete body checkup including blood work, vitals, and physical examination.',
+    type: 'report',
+    format: 'pdf',
+    department: 'General Medicine',
+    doctor: 'Dr. Sharma',
+    date: '2025-03-15',
+    fileUrl: '/reports/annual_checkup.pdf',
+    notes: 'Overall health is good. Vitamin D levels are slightly low, supplement recommended.',
+    tags: ['annual', 'checkup', 'blood work']
+  },
+  {
+    id: 2,
+    title: 'Chest X-Ray',
+    description: 'X-ray examination of the chest area to check lungs and heart.',
+    type: 'scan',
+    format: 'image',
+    department: 'Radiology',
+    doctor: 'Dr. Patel',
+    date: '2025-02-28',
+    fileUrl: '/reports/chest_xray.jpg',
+    notes: 'No abnormalities detected. Lungs are clear.',
+    tags: ['xray', 'chest', 'radiology']
+  },
+  {
+    id: 3,
+    title: 'Prescription for Hypertension',
+    description: 'Medication prescription for managing high blood pressure.',
+    type: 'prescription',
+    format: 'pdf',
+    department: 'Cardiology',
+    doctor: 'Dr. Gupta',
+    date: '2025-03-05',
+    fileUrl: '/prescriptions/bp_medicine.pdf',
+    notes: 'Take medication daily in the morning. Follow up in 3 months.',
+    tags: ['hypertension', 'medication', 'cardiology']
+  },
+  {
+    id: 4,
+    title: 'Blood Glucose Test Results',
+    description: 'Fasting and post-meal glucose level test results.',
+    type: 'lab',
+    format: 'pdf',
+    department: 'Pathology',
+    doctor: 'Dr. Singh',
+    date: '2025-03-10',
+    fileUrl: '/reports/glucose_test.pdf',
+    notes: 'Glucose levels are within normal range.',
+    tags: ['diabetes', 'glucose', 'blood test']
+  },
+  {
+    id: 5,
+    title: 'ECG Report',
+    description: 'Electrocardiogram to check heart rhythm and electrical activity.',
+    type: 'report',
+    format: 'pdf',
+    department: 'Cardiology',
+    doctor: 'Dr. Gupta',
+    date: '2025-02-20',
+    fileUrl: '/reports/ecg_report.pdf',
+    notes: 'Normal sinus rhythm. No abnormalities detected.',
+    tags: ['heart', 'ECG', 'cardiac']
+  },
+  {
+    id: 6,
+    title: 'Dental Examination',
+    description: 'Comprehensive dental checkup and cleaning.',
+    type: 'report',
+    format: 'pdf',
+    department: 'Dentistry',
+    doctor: 'Dr. Reddy',
+    date: '2025-01-15',
+    fileUrl: '/reports/dental_checkup.pdf',
+    notes: 'Two cavities identified in lower molars. Treatment scheduled.',
+    tags: ['dental', 'teeth', 'oral health']
+  },
+  {
+    id: 7,
+    title: 'MRI Scan - Knee',
+    description: 'Magnetic resonance imaging of right knee joint.',
+    type: 'scan',
+    format: 'image',
+    department: 'Orthopedics',
+    doctor: 'Dr. Kumar',
+    date: '2025-02-10',
+    fileUrl: '/reports/knee_mri.jpg',
+    notes: 'Minor meniscus tear detected. Physical therapy recommended.',
+    tags: ['MRI', 'knee', 'orthopedic']
+  },
+  {
+    id: 8,
+    title: 'Allergy Test Results',
+    description: 'Skin prick test for common allergens.',
+    type: 'lab',
+    format: 'pdf',
+    department: 'Immunology',
+    doctor: 'Dr. Iyer',
+    date: '2025-01-05',
+    fileUrl: '/reports/allergy_test.pdf',
+    notes: 'Positive for dust mite and pollen allergies. Antihistamines prescribed.',
+    tags: ['allergy', 'immunology', 'skin test']
+  },
+  {
+    id: 9,
+    title: 'Prescription for Antibiotics',
+    description: 'Course of antibiotics for treating respiratory infection.',
+    type: 'prescription',
+    format: 'pdf',
+    department: 'Pulmonology',
+    doctor: 'Dr. Verma',
+    date: '2025-03-01',
+    fileUrl: '/prescriptions/antibiotics.pdf',
+    notes: 'Complete full course of 7 days. Take with food.',
+    tags: ['antibiotics', 'infection', 'medication']
+  },
+  {
+    id: 10,
+    title: 'Eye Examination Report',
+    description: 'Comprehensive eye checkup and vision test.',
+    type: 'report',
+    format: 'pdf',
+    department: 'Ophthalmology',
+    doctor: 'Dr. Khanna',
+    date: '2025-02-05',
+    fileUrl: '/reports/eye_checkup.pdf',
+    notes: 'Mild astigmatism in left eye. New glasses prescription provided.',
+    tags: ['eye', 'vision', 'ophthalmology']
+  }
+];
