@@ -65,9 +65,12 @@ export default function LoginPage() {
       setIsLoading(false);
       toast({
         title: "Login Successful",
-        description: Welcome to HealthSync ${role} dashboard!,
+        description: `Welcome to HealthSync ${role} dashboard!`, // ✅ Correct
       });
-      navigate(/${role});
+      
+      navigate(`/${role}`);
+
+
     }, 1000);
   };
 
@@ -86,7 +89,8 @@ export default function LoginPage() {
         description: "Your account has been created successfully!",
       });
       
-      navigate(/${userType});
+      navigate(`/${userType}`);
+
     }, 1500);
   };
 
