@@ -243,7 +243,7 @@ export default function SettingsPage() {
                 <div className="flex items-center justify-between">
                   <div className="space-y-0.5">
                     <Label htmlFor="updates-announcements">Updates & Announcements</Label>
-                    <p className="text-sm text-muted-foreground">Receive news and updates from HealthSync</p>
+                    <p className="text-sm text-muted-foreground">Receive news and updates from VAIDIKA</p>
                   </div>
                   <Switch 
                     id="updates-announcements" 

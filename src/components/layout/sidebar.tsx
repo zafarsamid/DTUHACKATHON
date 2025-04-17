@@ -121,20 +121,20 @@ export function Sidebar({ className }: SidebarProps) {
   const [userRole, setUserRole] = useState<'patient' | 'doctor' | 'pharmacy' | 'admin'>('patient');
   const [collapsed, setCollapsed] = useState(false);
 
-  // Filter nav items based on user role or 'all'
+  
   const filteredNavItems = navItems.filter(
     item => item.role === userRole || item.role === 'all'
   );
 
   const handleLogout = () => {
-    // Clear authentication data
-    localStorage.removeItem('healthsync_auth');
-    localStorage.removeItem('healthsync_user_role');
     
-    // Show success message
+    localStorage.removeItem('VAIDIKA_auth');
+    localStorage.removeItem('VAIDIKA_user_role');
+    
+    
     toast.success("Logged out successfully");
     
-    // Redirect to login
+    
     navigate('/auth/login');
   };
 
@@ -151,7 +151,7 @@ export function Sidebar({ className }: SidebarProps) {
           {!collapsed && (
             <Link to="/" className="flex items-center gap-2">
               <Heart className="h-6 w-6 fill-primary stroke-white dark:stroke-black" />
-              <span className="font-bold text-xl text-primary">HealthSync</span>
+              <span className="font-bold text-xl text-primary">VAIDIKA</span>
             </Link>
           )}
           {collapsed && (

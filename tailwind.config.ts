@@ -62,7 +62,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// HealthSync custom colors
+				// VAIDIKA custom colors
 				health: {
 					primary: '#0EA5E9', // Main blue
 					secondary: '#1EAEDB', // Secondary blue

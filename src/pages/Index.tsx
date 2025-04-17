@@ -6,15 +6,15 @@ const Index = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Check if user is already authenticated
-    const isAuthenticated = localStorage.getItem('healthsync_auth') === 'true';
-    const userRole = localStorage.getItem('healthsync_user_role');
+    
+    const isAuthenticated = localStorage.getItem('VAIDIKA_auth') === 'true';
+    const userRole = localStorage.getItem('VAIDIKA_user_role');
     
     if (isAuthenticated && userRole) {
-      // Redirect to the user's dashboard based on their role
+     
       navigate(`/${userRole}`);
     } else {
-      // Redirect to login page if not authenticated
+      
       navigate('/auth/login');
     }
   }, [navigate]);
@@ -22,7 +22,7 @@ const Index = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-background">
       <div className="text-center animate-pulse">
-        <h1 className="text-4xl font-bold mb-4">Loading HealthSync...</h1>
+        <h1 className="text-4xl font-bold mb-4">Loading VAIDIKA...</h1>
       </div>
     </div>
   );

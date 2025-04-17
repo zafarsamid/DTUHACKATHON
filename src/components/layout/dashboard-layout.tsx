@@ -12,11 +12,11 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
   const navigate = useNavigate();
   
   useEffect(() => {
-    // Check if user is authenticated
-    const isAuthenticated = localStorage.getItem('healthsync_auth') === 'true';
+    
+    const isAuthenticated = localStorage.getItem('VAIDIKA_auth') === 'true';
     
     if (!isAuthenticated) {
-      // Redirect to login if not authenticated
+      
       navigate('/auth/login');
     }
   }, [navigate]);

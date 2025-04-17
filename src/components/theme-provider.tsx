@@ -27,7 +27,7 @@ const ThemeProviderContext = createContext<{
 export function ThemeProvider({ 
   children,
   defaultTheme = "system",
-  storageKey = "healthsync-theme",
+  storageKey = "VAIDIKA-theme",
   ...props
 }: ThemeProviderProps) {
   const [theme, setTheme] = useState<Theme>(
